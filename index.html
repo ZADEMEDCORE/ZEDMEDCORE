@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZADE MedCore — Digital Healthcare, Smarter Medical Data</title>
+<meta name="description" content="ZADE MedCore is building intelligent digital tools for laboratory support, medical data management, and personal health tracking.">
+<link rel="icon" href="assets/zade-logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="vitals-canvas"></canvas>
+
+<header class="nav" id="nav">
+  <a href="#top" class="nav__brand">
+    <img src="assets/zade-logo.jpg" alt="ZADE MedCore" class="nav__logo">
+    <span>ZADE MedCore</span>
+  </a>
+  <nav class="nav__links" id="navLinks">
+    <a href="#vision">Vision</a>
+    <a href="#intelligence">Intelligence</a>
+    <a href="#medcore-ai">MedCore AI</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#join">Join</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__grid">
+      <div class="hero__copy">
+        <p class="hero__kicker">Founded 2026 &mdash; building out of Nigeria, for the world</p>
+        <h1 class="hero__headline">Digital healthcare.<br>Medical data, made smarter.</h1>
+        <p class="hero__sub">We're building intelligent tools that help people organize, understand, and make sense of laboratory results, health records, and the everyday information their health generates.</p>
+        <div class="hero__actions">
+          <a href="#intelligence" class="btn btn--primary">Explore ZADE MedCore</a>
+          <a href="#vision" class="btn btn--ghost">Start the journey</a>
+        </div>
+        <dl class="hero__vitals">
+          <div><dt>Focus</dt><dd>Lab data &amp; health records</dd></div>
+          <div><dt>Stage</dt><dd>Foundation era</dd></div>
+          <div><dt>Built from</dt><dd>Nigeria</dd></div>
+        </dl>
+      </div>
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero__glow"></div>
+        <img src="assets/zade-logo.jpg" alt="" class="hero__mark">
+        <svg class="hero__pulse" viewBox="0 0 400 100" preserveAspectRatio="none">
+          <polyline points="0,50 60,50 80,20 100,80 120,50 400,50" />
+        </svg>
+      </div>
+    </div>
+    <a href="#vision" class="scroll-cue" aria-label="Scroll to next section"><span></span></a>
+  </section>
+
+  <!-- STORY -->
+  <section class="story" id="vision">
+    <div class="story__inner">
+      <p class="section-label">01 / The problem</p>
+      <h2>Healthcare information has a future.</h2>
+      <p class="story__lead">Medical information is powerful &mdash; but only when people can actually organize it, understand it, and use it responsibly.</p>
+      <div class="story__body">
+        <p>Every year, healthcare generates an overwhelming volume of information: laboratory reports, medical records, personal health measurements, research data, years of history scattered across paper files and disconnected systems. Most of it is hard to read, harder to search, and impossible to act on without help.</p>
+        <p>ZADE MedCore is building the technology layer that connects that information to the people who need it &mdash; turning scattered documents into digital experiences that are organized, understandable, and genuinely useful.</p>
+      </div>
+      <p class="story__note">We're not building a replacement for doctors or laboratory scientists. We're building better tools for the people already doing that work &mdash; and for the individuals trying to understand their own health.</p>
+    </div>
+  </section>
+
+  <!-- THREE PILLARS -->
+  <section class="pillars" id="intelligence">
+    <div class="pillars__head">
+      <p class="section-label">02 / The ecosystem</p>
+      <h2>Three intelligence pillars.</h2>
+      <p>The foundation of everything ZADE MedCore is building.</p>
+    </div>
+
+    <div class="pillars__grid">
+      <article class="pillar pillar--a">
+        <div class="pillar__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M18 4h12M20 4v12l-9 20a5 5 0 004.6 7h17a5 5 0 004.6-7l-9-20V4M15 30h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <p class="pillar__eyebrow">Laboratory Intelligence</p>
+        <p class="pillar__purpose">Helping people interact better with their laboratory information.</p>
+        <ul>
+          <li>Organize laboratory results in one place</li>
+          <li>Plain-language explanations of medical terminology</li>
+          <li>Store and revisit past investigations</li>
+          <li>Track changes across results over time</li>
+          <li>Educational resources for students and patients</li>
+        </ul>
+      </article>
+
+      <article class="pillar pillar--b">
+        <div class="pillar__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M6 40V24M18 40V10M30 40V20M42 40V6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <p class="pillar__eyebrow">Medical Data Intelligence</p>
+        <p class="pillar__purpose">Turning healthcare information into organized digital knowledge.</p>
+        <ul>
+          <li>Personal health records, kept in one system</li>
+          <li>Structured organization of medical data</li>
+          <li>Fast search and filtering</li>
+          <li>Clear visualization of health information</li>
+          <li>Analytics tools, in development</li>
+        </ul>
+      </article>
+
+      <article class="pillar pillar--c">
+        <div class="pillar__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M24 40s-14-8.6-14-19a8 8 0 0114-5.3A8 8 0 0138 21c0 10.4-14 19-14 19z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M8 24h6l3-6 4 10 3-7 2 3h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <p class="pillar__eyebrow">Personal Health Intelligence</p>
+        <p class="pillar__purpose">Helping individuals understand their own health journey.</p>
+        <ul>
+          <li>Blood pressure tracking</li>
+          <li>Heart rate over time</li>
+          <li>Glucose monitoring</li>
+          <li>Symptom logging</li>
+          <li>General health measurements, all in one view</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- MEDCORE AI -->
+  <section class="ai" id="medcore-ai">
+    <div class="ai__inner">
+      <div class="ai__copy">
+        <p class="section-label">03 / What's next</p>
+        <h2>Meet MedCore AI.</h2>
+        <p>An intelligent assistant being developed to help people organize and understand their laboratory information &mdash; built to educate and support, and to always point toward professional healthcare consultation, not replace it.</p>
+        <span class="badge">Coming soon</span>
+      </div>
+      <div class="ai__visual" aria-hidden="true">
+        <div class="ai__core">
+          <svg viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="70" class="ai__ring ai__ring--1"/>
+            <circle cx="100" cy="100" r="52" class="ai__ring ai__ring--2"/>
+            <circle cx="100" cy="100" r="34" class="ai__ring ai__ring--3"/>
+            <polyline points="40,100 75,100 88,70 102,130 116,100 160,100" class="ai__pulse-line"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section class="roadmap" id="roadmap">
+    <p class="section-label">04 / Where we're headed</p>
+    <h2>The roadmap.</h2>
+    <ol class="timeline">
+      <li class="timeline__item">
+        <span class="timeline__year">2026</span>
+        <h3>Foundation era</h3>
+        <ul>
+          <li>Brand development</li>
+          <li>Research</li>
+          <li>Website launch</li>
+          <li>Prototype concepts</li>
+        </ul>
+      </li>
+      <li class="timeline__item">
+        <span class="timeline__year">2027</span>
+        <h3>Creation era</h3>
+        <ul>
+          <li>First applications</li>
+          <li>MedCore AI development</li>
+          <li>Testing with early users</li>
+        </ul>
+      </li>
+      <li class="timeline__item">
+        <span class="timeline__year">Future</span>
+        <h3>Healthcare ecosystem era</h3>
+        <ul>
+          <li>Healthcare partnerships</li>
+          <li>Platform expansion</li>
+          <li>Growth beyond Nigeria</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+  <!-- JOIN -->
+  <section class="join" id="join">
+    <div class="join__inner">
+      <p class="section-label">05 / Join us</p>
+      <h2>Help build the future of healthcare.</h2>
+      <p>ZADE MedCore is early &mdash; which means the people who join now help shape what it becomes.</p>
+      <div class="join__roles">
+        <span>Software developers</span>
+        <span>AI engineers</span>
+        <span>Medical professionals</span>
+        <span>Researchers</span>
+        <span>Designers</span>
+        <span>Student innovators</span>
+      </div>
+      <a href="#contact" class="btn btn--primary">Get in touch</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <div class="contact__info">
+        <p class="section-label">06 / Contact</p>
+        <h2>Let's talk.</h2>
+        <p>Questions, ideas, or interest in joining early &mdash; reach us directly.</p>
+        <a class="contact__link" href="mailto:zademedcore@gmail.com">zademedcore@gmail.com</a>
+        <a class="contact__link" href="https://wa.me/2348170252951" target="_blank" rel="noopener">+234 817 025 2951 (WhatsApp)</a>
+      </div>
+      <form class="contact__form" id="contactForm">
+        <label>
+          Name
+          <input type="text" name="name" id="cf-name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" id="cf-email" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" id="cf-message" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn btn--primary">Send via WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <img src="assets/zade-logo.jpg" alt="ZADE MedCore" class="footer__logo">
+  <p>&copy; 2026 ZADE MedCore. Precision. Care. Compassion.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
