@@ -443,6 +443,30 @@ main, .nav, .footer{position:relative; z-index:1;}
   background:var(--blue-soft);
 }
 
+.pillar__link{
+  display:inline-flex;
+  align-items:center;
+  gap:0.4rem;
+  margin-top:1.6rem;
+  padding-top:1rem;
+  border-top:1px solid var(--line);
+  width:100%;
+  font-size:0.86rem;
+  font-weight:600;
+  color:var(--cyan);
+  transition:gap 0.25s ease, color 0.25s ease;
+}
+.pillar__link::after{
+  content:'\2197';
+  font-size:0.95em;
+  transition:transform 0.25s ease;
+}
+.pillar__link:hover{
+  gap:0.6rem;
+  color:var(--white);
+}
+.pillar__link:hover::after{transform:translate(2px, -2px);}
+
 /* ============================================
    MedCore AI
    ============================================ */
